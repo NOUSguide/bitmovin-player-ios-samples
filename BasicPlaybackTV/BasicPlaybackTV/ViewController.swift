@@ -32,6 +32,7 @@ final class ViewController: UIViewController {
         
         do {
             try config.setSourceItem(url: streamUrl)
+            config.playbackConfiguration.isAutoplayEnabled = true
             
             // Create player based on player configuration
             let player = BitmovinPlayer(configuration: config)
